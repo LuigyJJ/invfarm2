@@ -3,6 +3,7 @@ import { methodHTTP as categoriaController } from "../controllers/categoria.cont
 const router = Router();
 
 router.get("/", categoriaController.getCategorias) 
+router.get("/:id", categoriaController.getCategory) 
 router.post("/", categoriaController.postCategorias)
 
 export default router;
