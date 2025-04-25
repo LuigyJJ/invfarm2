@@ -1,0 +1,145 @@
+.categories-container {
+    padding: 20px;
+    margin-left: 20%;
+    background-color: #1E2A38;
+    min-height: 100vh;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #2d3748;
+    background-color: #1E2A38;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.profile-name {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.categories-table {
+    width: 100%;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0 1px;
+    margin-top: 20px;
+}
+
+.categories-table thead {
+    background-color: #0A2647;
+}
+
+.categories-table th {
+    padding: 15px;
+    text-align: left;
+    color: #FFD700;
+    font-weight: normal;
+}
+
+.categories-table td {
+    padding: 15px;
+    background-color: #1E2A38;
+    border-bottom: 1px solid #2d3748;
+}
+
+.categories-table img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.btn-details {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #FF1493;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #FFD700;
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    background-color: #1E2A38;
+    color: white;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.sidebar-menu a:hover {
+    background-color: #2d3748;
+    border-radius: 4px;
+}
+
+.sidebar-menu i {
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: #1E2A38;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-icons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons i {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+} 
