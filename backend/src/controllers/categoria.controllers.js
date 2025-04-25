@@ -10,8 +10,22 @@ const getCategorias = async (req, res)=> {
     
 
 }
+const postCategorias = async(req, res) => {
+    try{
+        const {CategoriaNombre, Descripcion, Imagen} = req.body;
+        const category = {CategoriaNombre, Descripcion, Imagen}
+        const connection = await getConnection();
+        const result = await connection.query("INSERT INTO categorias SET ?", category)
+        res.json(result);
+        
+    }catch (error){
+        console.error("ERROR 500");
+    }
 
+
+
+}
 export const methodHTTP = {
-    getCategorias
-
+    getCategorias,
+    postCategorias
 }
